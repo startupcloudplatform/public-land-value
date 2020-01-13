@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+body {
+    background-color: #efefef !important;
+}
+/*intro-sch*/
+.wrapper{
+    top: 0;
+    position: relative;
+    background-color: transparent;
+}
+.content{
+    /*padding-top: 55px;*/
+}
+
+.login-btn {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 53px;
+    letter-spacing: -.4px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 20px;
+}
+.login-btn > a:hover, .login-btn > a:active, .login-btn > a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+.background, .background > div.background-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background > .background-img{
+    background-repeat: no-repeat,no-repeat;
+    background-position: center center,center center;
+    background-size: cover,cover;
+}
+.background .background-img {
+    max-height:317px;
+    background-image: url(../images/bg_06.jpg);
+    filter: brightness(.9);
+    opacity: .891;
+}
+.con-top {
+    position: relative;
+    height: 275px;
+}
+.total-sch-con{
+    position: relative;
+    max-width: 1320px;
+    margin: auto;
+    padding-top: 0;
+    height: 263px;
+}
+
+.content .con-body{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/*map - contents*/
+.map-wrap{
+    min-height: 500px;
+    margin: 20px 0 !important;
+}
+.box-wrap {
+    background: #ffffff;padding: 30px 25px 50px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;overflow: hidden;margin: 0 auto;
+    box-shadow: 0 1px 15px 1px rgba(69, 65,78, .08);-webkit-box-shadow: 0 1px 15px 1px rgba(69, 65,78, .08);-moz-box-shadow: 0 1px 15px 1px rgba(69, 65,78, .08);}
+@media only screen and (max-device-width: 1024px) {.box-wrap.w-80 {margin: 0 auto !important;}}
+
+.box-wrap.map-con {
+    width: 90%;
+    min-height: 500px;
+}
+.light-version { width: 100%; }
+.light-version > h1 {
+    display: inline-block;
+    width:23%;
+}
+
+.notice-box{
+    display: inline-block;
+    width: 30%;
+    border-left: 1px solid gray;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.notice-box span {
+    font-size: 13px;
+    color: #bbbbbb;
+    padding-left: 10px;
+}
+
+/* ************** 알림 ************** */
+.memo-txt:before {
+    content: '\f05a';
+    font-family: FontAwesome, sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.memo-txt {
+    color: #565656;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    position: relative;
+    /*padding: 8px 15px 8px 35px;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.memo-header {
+    padding: 8px 15px 8px 8px !important;
+}
+.memo-body {
+    padding: 3px 15px 8px 0px !important;
+}
+.map-con {
+    overflow: hidden;
+    position: relative;
+}
+
+/* ************** 영역 다시 선택 ************** */
+.area-btn-wrap {
+    position: absolute;
+    z-index: 9990;
+    top: 14px;
+    right: 90px;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+/* ************** Modal ************** */
+.modal-wrap {
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    z-index: 9990;
+    top: -4px;
+    /*left: 55px;*/
+}
+input[type="text"], input[type="password"], input[type="search"], textarea, select {
+    height: 45px !important;
+
+}
+.search-box {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.search-box .btn.btn-ico{
+    position: absolute;
+    right: 3px;
+    /*top: 6px;*/
+    top: 20px;
+    height: 32px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+.btn-round-input {
+    position: absolute;
+    right: 33px !important;
+    padding: 0 6px;
+    top: 7px !important;
+    font-family: FontAwesome, sans-serif;
+    line-height: 29px;
+    font-size: 18px;
+}
+.btn-round-input span {
+    display: none;
+}
+.modal-wrap .memo-txt {
+    padding: 8px 15px 8px 35px; !important;
+}
+
+/* ************** width 값 축소 ************** */
+@media screen and (max-width: 1364px){
+    .content .con-body{
+        width: 940px;
+    }
+}

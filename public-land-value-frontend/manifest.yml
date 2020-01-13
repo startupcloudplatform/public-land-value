@@ -1,0 +1,8 @@
+---
+applications:
+  - name: plv-front
+    memory: 1G
+    path: target/plv-front-0.0.1-SNAPSHOT.jar
+    env:
+      msa: yes
+      private: 

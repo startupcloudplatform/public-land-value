@@ -1,0 +1,9 @@
+---
+applications:
+  - name: plv-back
+    memory: 1G
+    path: target/plv-back-0.0.1-SNAPSHOT.jar
+    env:
+      msa: yes
+      private: 
+

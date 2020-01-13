@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="publicLandValueApp">
+<script type="text/javascript">
+    var _USER_INFO_CACHE_NAME_ = "admin.user";
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>public-land-value-app</title>
+
+    <!-- jquery -->
+    <script src="js/components/jquery-1.11.3.min.js"></script>
+    <script src="js/components/jquery-ui.js"></script>
+
+    <script src="webjars/jquery/1.11.3/jquery.js"></script>
+    <script src="webjars/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- angularjs -->
+    <script src="webjars/angularjs/1.7.7/angular.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-route.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-cookies.min.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-resource.min.js"></script>
+
+    <!-- boostsrap -->
+    <script src="js/components/bootstrap.min.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="2.5.0" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-2.5.0.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/components/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/components/bootstrap-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/components/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/components/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/components/notosanskr.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/contents.css">
+    <link rel="stylesheet" type="text/css" href="css/converter.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/kakaoMap.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+
+    <!--controller -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/mapController.js"></script>
+
+    <!-- kakao map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey={ app키를 입력해주세요 }&libraries=services"></script>
+</head>
+<body>
+<div id="mainLoading" class="loader-container" ng-include="'/views/mainLoading.html'" style="display: none"></div>
+    <header id="header">
+        <div class="inner">
+            <div id="logo" class="light-version">
+                <h1>전국 공동주택 가격정보 조회 서비스</h1>
+<!--                <div class="login-btn"><a ng-click="signIn()">Sign in</a></div>-->
+            </div>
+        </div>
+    </header>
+    <div ng-view>hello</div>
+</body>
+</html>
